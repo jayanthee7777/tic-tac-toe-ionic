@@ -1,0 +1,56 @@
+.nav-bar-title {
+  font-size: 14px;
+  font-weight: $app-bold-weight;
+  color: $app-dark-grey;
+}
+
+.bar-footer {
+  background: none;
+}
+
+// NOTIFICATION POPUP
+.popup-head {
+  border-bottom: 0;
+}
+
+.popup-body {
+  text-align: center;
+}
+
+.button {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border-radius: 10px;
+  font-family: $app-font-family;
+  font-weight: $app-normal-weight;
+  &.button-light {
+    border: 1px solid $app-border-grey;
+    color: $app-dark-grey;
+    background: transparent;
+    letter-spacing: 2px;
+  }
+}
+
+.alert-as-notification {
+  .popup-head {
+    position: relative;
+    padding-top: 40px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 44%;
+      width: 32px;
+      height: 24px;
+      display: block;
+      background-image: url('../img/PARTY_PARROT.gif');
+      background-repeat: no-repeat;
+    }
+  }
+  &.is-draw .popup-head {
+    padding-top: 1rem;
+    &:after {
+      display: none;
+    }
+  }
+}

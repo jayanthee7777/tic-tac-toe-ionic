@@ -1,0 +1,14 @@
+.mc-button {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: 1px solid $app-border-grey;
+  border-radius: 10px;
+  &.has-icon {
+    .mark-icon-large > svg {
+      width: 59px;
+      height: 59px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

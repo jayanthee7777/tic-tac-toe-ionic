@@ -1,0 +1,17 @@
+<ion-view view-title="Tic-Tac-Toe">
+  <ion-nav-title>Player {{vm.currentTurn}}'s Turn</ion-nav-title>
+  <ion-content class="padding">
+    <div class="container-wrapper">
+      <p class="mc-padding-1 mc-text-thin mc-text-light-grey">Tap on one of the boxes in the grid to place your mark. </p>
+      <table align="center" class="mc-width-100">
+        <tr ng-repeat="(row_i, row) in vm.grid track by $index">
+          <td ng-repeat="(col_i, col) in vm.grid track by $index" class="mc-cell" ng-click="vm.markPosition(row_i, col_i)">
+            <div ng-if="vm.data[row_i+''+col_i] === 'x'" class="mark-icon-large" ng-include="'../../../../img/x-icon.svg'"></div>
+            <div ng-if="vm.data[row_i+''+col_i] === 'o'" class="mark-icon-large" ng-include="'../../../../img/o-icon.svg'"></div>
+          </td>
+        </tr>
+      </table>
+      <p class="mc-text-danger mc-padding-1" ng-if="vm.invalidMove">Can't move there.</p>
+    </div>
+  </ion-content>
+</ion-view>
