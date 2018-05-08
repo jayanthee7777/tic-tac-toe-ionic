@@ -13,3 +13,26 @@ $app-font-family: 'Muli', sans-serif !default;
 $app-thin-weight: 200 !default;
 $app-normal-weight: 400 !default;
 $app-bold-weight: 700 !default;
+
+// Breakpoints
+$mc-breakpoint-small:  320px  !default;
+$mc-breakpoint-medium: 768px  !default;
+$mc-breakpoint-large:  992px  !default;
+$mc-breakpoint-xl:     1200px !default;
+
+
+
+// MEDIA QUERIES VARIABLES
+// ===========================
+
+$mc-media-query-xs-screen: "screen" !default;
+$mc-media-query-small-screen: "screen and (min-width: #{$mc-breakpoint-small})" !default;
+$mc-media-query-medium-screen: "screen and (min-width: #{$mc-breakpoint-medium})" !default;
+$mc-media-query-large-screen: "screen and (min-width: #{$mc-breakpoint-large})" !default;
+$mc-media-query-xl-screen: "screen and (min-width: #{$mc-breakpoint-xl})" !default;
+
+$mc-media-query-xs-screen-only: "screen and (max-width: #{$mc-breakpoint-small - 1px})" !default;
+$mc-media-query-small-screen-only: "screen and (min-width: #{$mc-breakpoint-small}) and (max-width: #{$mc-breakpoint-medium - 1px})" !default;
+$mc-media-query-medium-screen-only: "screen and (min-width: #{$mc-breakpoint-medium}) and (max-width: #{$mc-breakpoint-large - 1px})" !default;
+$mc-media-query-large-screen-only: "screen and (min-width: #{$mc-breakpoint-large}) and (max-width: #{$mc-breakpoint-xl - 1px})" !default;
+$mc-media-query-xl-screen-only: $mc-media-query-xl-screen !default;

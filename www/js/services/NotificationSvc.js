@@ -9,13 +9,13 @@ angular.module('app')
     };
 
     function add(title, winningMark, callback) {
-      let winnerTemplate = '<span class="mark-icon-large" ng-include="\'../../../../img/x-icon.svg\'"></span>';
+      let winnerTemplate = '<span class="mark-icon-large" ng-include="\'./img/x-icon.svg\'"></span>';
       if (!winningMark) {
         winnerTemplate = '';
       }
 
       if (winningMark === 'o') {
-        winnerTemplate = '<span class="mark-icon-large" ng-include="\'../../../../img/o-icon.svg\'"></span>';
+        winnerTemplate = '<span class="mark-icon-large" ng-include="\'./img/o-icon.svg\'"></span>';
       }
 
       const notification = $ionicPopup.show({

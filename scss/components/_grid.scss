@@ -33,4 +33,12 @@
   padding: 1rem;
   text-align: center;
   border: 1px solid $app-border-grey;
+  @media #{$mc-media-query-small-screen-only} {
+    width: 112px;
+    height: 112px;
+    .mark-icon-large > svg {
+      width: 75px;
+      height: 75px;
+    }
+  }
 }
